@@ -21,6 +21,8 @@ BMad-CORE (**C**ollaboration **O**ptimized **R**eflection **E**ngine) amplifies 
 
 - [Quick Start](#quick-start)
 - [What is BMad-CORE?](#what-is-bmad-core)
+- [What is the BMAD Method?](#what-is-the-bmad-method)
+- [Use BMAD in ChatGPT (copy/paste prompts)](#use-bmad-in-chatgpt-copypaste-prompts)
 - [Modules](#modules)
   - [BMad Method (BMM)](#bmad-method-bmm---agile-ai-development)
   - [BMad Builder (BMB)](#bmad-builder-bmb---create-custom-solutions)
@@ -61,6 +63,41 @@ Foundation framework powering all BMad modules:
 - **E**ngine: Framework orchestrating specialized agents and workflows
 
 BMad-CORE helps you **discover better solutions** through strategic questioning and structured thinking.
+
+## What is the BMAD Method?
+
+BMAD stands for the "Breakthrough Method of Agile AI‑driven Development." It is a pragmatic, scale‑adaptive way to build software and games with AI as a thinking partner rather than an auto‑pilot.
+
+- **Origins**: BMAD grew out of hands-on work with agile delivery, design thinking, and lean product practices, combined with thousands of real-world AI sessions. Earlier versions (v4) used tasks/templates; v6 refactors the method around BMad‑CORE with agents and workflows.
+- **Structure**: The BMAD Method is implemented as the BMM module on top of the CORE engine. You work with specialized agents (PM, Analyst, Architect, SM, DEV, UX) through guided workflows across four phases: Analysis → Planning → Solutioning → Implementation.
+- **Scale-Adaptive**: The method adapts to project size (Levels 0–4), from single-file fixes to enterprise systems.
+
+If you want the "how it feels" overview, start with the [BMad Method V6 Quick Start](./docs/BMad-Method-V6-Quick-Start.md).
+
+## Use BMAD in ChatGPT (copy/paste prompts)
+
+You can use the BMAD Method directly in ChatGPT (or any LLM chat) without installing anything by loading one of the agent definitions below as your System prompt.
+
+How to use:
+
+1. Open one of the agent files below on GitHub.
+2. Copy the contents of the `persona` section and (when present) `critical_actions` into your chat model's System prompt.
+3. Start a new chat and speak naturally (e.g., "Run PRD" or "Create a story for Epic X"). The menu items listed in each file show that agent’s supported workflows.
+
+Core BMM agents (system prompt links):
+
+- Analyst: ./src/modules/bmm/agents/analyst.agent.yaml
+- Product Manager (PM): ./src/modules/bmm/agents/pm.agent.yaml
+- Architect: ./src/modules/bmm/agents/architect.agent.yaml
+- Scrum Master (SM): ./src/modules/bmm/agents/sm.agent.yaml
+- Developer (DEV): ./src/modules/bmm/agents/dev.agent.yaml
+- UX Designer: ./src/modules/bmm/agents/ux-designer.agent.yaml
+
+Tips:
+
+- Use a fresh chat for each workflow (prevents context drift and hallucinations).
+- You can say commands naturally ("create architecture", "draft PRD")—the agent will map them to its workflows.
+- For deeper guidance on which workflow to run when, see the [Quick Start](./docs/BMad-Method-V6-Quick-Start.md).
 
 ## Modules
 
