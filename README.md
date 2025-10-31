@@ -86,12 +86,12 @@ How to use:
 
 Core BMM agents (system prompt links):
 
-- Analyst: ./src/modules/bmm/agents/analyst.agent.yaml
-- Product Manager (PM): ./src/modules/bmm/agents/pm.agent.yaml
-- Architect: ./src/modules/bmm/agents/architect.agent.yaml
-- Scrum Master (SM): ./src/modules/bmm/agents/sm.agent.yaml
-- Developer (DEV): ./src/modules/bmm/agents/dev.agent.yaml
-- UX Designer: ./src/modules/bmm/agents/ux-designer.agent.yaml
+- [Analyst](./src/modules/bmm/agents/analyst.agent.yaml)
+- [Product Manager (PM)](./src/modules/bmm/agents/pm.agent.yaml)
+- [Architect](./src/modules/bmm/agents/architect.agent.yaml)
+- [Scrum Master (SM)](./src/modules/bmm/agents/sm.agent.yaml)
+- [Developer (DEV)](./src/modules/bmm/agents/dev.agent.yaml)
+- [UX Designer](./src/modules/bmm/agents/ux-designer.agent.yaml)
 
 Tips:
 
